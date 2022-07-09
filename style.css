@@ -1,0 +1,126 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 > div {
+  flex: 0 0 90%;
+}
+
+#numbers {
+  flex: 0 0 22rem;
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border: 2px solid lightgray;
+  border-radius: .4rem;
+  color: dimgray;
+  text-align: center;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+  border-color: dimgray;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+#total {
+  color: darkgray;
+}
+
+#slash {
+  color: darkgray;
+}
+
+#goal {
+  color: dimgray;
+}
+
+#units {
+  color: lightgray;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+button {
+  height: 2.3rem;
+  background: lightgray;
+  color: darkgray;
+  border: 2px solid lightgray;
+  border-radius: .4rem;
+
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  #total {
+    color: gainsboro;
+  }
+  
+  #slash {
+    color: gainsboro;
+  }
+  
+  #goal {
+    color: whitesmoke;
+  }
+  
+  #units {
+    color: silver;
+  }
+
+  input {
+    background: black;
+    border-color: silver;
+    color: whitesmoke;
+  }
+
+  input:focus {
+    border-color: whitesmoke;
+  }
+
+  button {
+    background: silver;
+    color: dimgray;
+  }
+}
