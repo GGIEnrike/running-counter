@@ -17,7 +17,12 @@ function add_total() {
     total += +input.value;
     localStorage.setItem('total', total.toFixed(2));
     input.value = '';
-    totalEl.innerText = localStorage.getItem('total');
+    if (+localStorage.getItem('total') === goal) {
+        totalEl.innerText = goal.toString();
+    }
+    else {
+        totalEl.innerText = localStorage.getItem('total');
+    }
 }
 input.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
