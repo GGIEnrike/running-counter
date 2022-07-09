@@ -2,7 +2,7 @@
 if (localStorage.getItem('total') === null) {
     localStorage.setItem('total', '0.00');
 }
-var total = parseFloat(localStorage.getItem('total'));
+var total = parseFloat(parseFloat(localStorage.getItem('total')).toFixed(2));
 var goal = 100;
 var totalEl = document.getElementById('total');
 var goalEl = document.getElementById('goal');
